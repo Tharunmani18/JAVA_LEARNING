@@ -1,0 +1,47 @@
+@SpringBootApplication
+
+This one annotation is enough to start and auto-configure everything in Spring Boot.
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MyApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(MyApplication.class, args);
+    }
+}
+
+@Controller
+it is used to build web application and retuns HTML page and JSP it does not return JSON by default 
+
+example: 
+@Controller
+ public class cont{
+    GetMapping("/home")
+    public static hcont{
+        return "home";
+    }
+}
+
+@RestController
+it used to build Rest API's and it is a combination of contoller+responsebody by default retuns JSON values.
+example: 
+@RestController
+    public class homerestcontoller{
+        GetMapping("/home)
+        public static rcontoller{
+            return "home";
+        }
+    }
+
+
+@Service
+@Repository
+@Autowired
+@GetMapping
+@PostMapping
+@Entity
+@Id
+@Transactional
