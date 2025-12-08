@@ -26,4 +26,4 @@ public class Overrides extends Animal{
 // 1. avoid the mistakes of method names
 // 2. steps : class -> methods -> statements
 
-//errors: no
+//errors: yes
