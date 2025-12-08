@@ -1,0 +1,19 @@
+controller
+            it allows html web pages in springboot MVC for that we need to use dependency as springboot web thymeleaf.
+
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+
+example:
+
+@controller
+class demo {
+    @GetMapping("/cont)
+    public String cont{
+        return "hello";            NOTE:   this file should be in folder formate src/main/resources/templates/hello.html
+    }
+}
+
