@@ -1,0 +1,40 @@
+it is used to create a REST API's it return the json, text ot object and doest support HTTP web pages ombination of @controller and @responsebody
+
+
+package com.practise.Demo.models;
+
+import lombok.Data;
+
+@Data
+public class Login {
+
+    public Login(String password, String name) {. === this is constructor
+        this.password = password;
+        this.name = name;
+    }
+
+    public String name;
+    public String password;
+
+
+}
+=====================================================
+
+
+package com.practise.Demo.controllers;
+
+import com.practise.Demo.models.Login;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Rcon {
+    @GetMapping("/hellos")
+    public Login sayHello(){
+        return new Login("Tharun", "1234");
+    }
+
+}
+
+
+Note: for returning the json formate required getter and setter method and constructor required to create 
