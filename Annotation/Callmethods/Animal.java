@@ -1,6 +1,6 @@
 package Annotation.Callmethods;
 
-public class Animal {
-    public void sound(){}
-    
-}
+@FunctionalInterface
+public interface Animal {
+    String sound();
+} 
